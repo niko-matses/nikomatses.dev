@@ -5,9 +5,7 @@ const Projects = () => (
   <Layout>
     <section className="section__about">
       <h1 className="section__heading">Projects</h1>
-      <p className="section__intro">
-        Here are some cool web apps I've worked on.
-      </p>
+      <p className="section__intro">Here are some web apps I've worked on.</p>
     </section>
   </Layout>
 );
