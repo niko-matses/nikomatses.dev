@@ -1,0 +1,18 @@
+backend:
+  name: github
+  branch: master
+  repo: niko-matses/nikomatses.dev
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'portfolio'
+    label: 'Project'
+    folder: 'src/portfolio'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Project Name', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'URL', name: 'project-url', widget: 'string' }
