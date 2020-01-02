@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby';
-
+import styled from 'styled-components';
 const POST_ARCHIVE_QUERY = graphql`
   query ProjectArchive {
     allMarkdownRemark(
@@ -19,6 +19,17 @@ const POST_ARCHIVE_QUERY = graphql`
   }
 `;
 
+const ArchiveList = styled.ul`
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  a {
+    font-family: sans-serif;
+    text-decoration: underline;
+    color: teal;
+  }
+`;
+
 const Projects = () => (
   <StaticQuery
     query={POST_ARCHIVE_QUERY}
@@ -26,7 +37,7 @@ const Projects = () => (
       <>
         <aside>
           <h3>Recent Projects</h3>
-          <ul>
+          <ArchiveList>
             {allMarkdownRemark.edges.map(edge => (
               <li key={edge.node.frontmatter.slug}>
                 <Link to={`/posts${edge.node.frontmatter.slug}`}>
@@ -34,7 +45,7 @@ const Projects = () => (
                 </Link>
               </li>
             ))}
-          </ul>
+          </ArchiveList>
         </aside>
       </>
     )}
