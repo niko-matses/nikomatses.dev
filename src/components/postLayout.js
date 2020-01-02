@@ -1,14 +1,37 @@
 import React, { Component } from 'react';
+import { graphql } from 'gatsby';
 import Layout from './layout';
 import Projects from './projects';
 
+// Static Query - Used Anywhere, doesn't accept variables/params, can't use context
+// Page Query - Must be used on pages
+
 export default class postLayout extends Component {
   render() {
+    const { markdownRemark } = this.props.data;
     return (
       <Layout>
-        <h1>Post Layout</h1>
+        <h1>{markdownRemark.frontmatter.title}</h1>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: markdownRemark.html,
+          }}
+        />
         <Projects />
       </Layout>
     );
   }
 }
+
+export const query = graphql`
+  query PostQuery($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+        date
+        slug
+      }
+    }
+  }
+`;
