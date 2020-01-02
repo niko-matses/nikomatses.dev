@@ -1,8 +1,8 @@
 import React from 'React';
 import Layout from '../components/layout';
 
-const About = () => (
-  <Layout>
+const About = ({ location }) => (
+  <Layout location={location}>
     <section className="section__about">
       <h1 className="section__heading">About Me</h1>
       <p className="section__intro">
