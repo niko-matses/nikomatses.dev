@@ -40,13 +40,7 @@ module.exports = {
         name: 'posts',
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/images`,
-        name: 'images',
-      },
-    },
+
     'gatsby-transformer-remark',
     'gatsby-plugin-netlify',
   ],
