@@ -1,5 +1,5 @@
 ---
-slug: '/ideal-capital-group'
+slug: '/hello-world'
 date: '2019-12-24'
 title: 'Ideal Capital Group'
 ---

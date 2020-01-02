@@ -1,6 +1,6 @@
 ---
-slug: '/flinggolf'
-date: '2018-12-24'
+slug: '/hello-world'
+date: '2019-12-24'
 title: 'FlingGolf'
 ---
 

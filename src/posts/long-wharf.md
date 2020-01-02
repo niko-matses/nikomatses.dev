@@ -1,7 +1,7 @@
 ---
-slug: '/flinggolf'
-date: '2018-12-24'
-title: 'FlingGolf'
+slug: '/long-wharf-capital'
+date: '2017-12-24'
+title: 'Long Wharf Capital'
 ---
 
 # This is the first post
