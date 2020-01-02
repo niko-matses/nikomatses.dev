@@ -3,10 +3,12 @@ module.exports = {
     title: `Niko Matses - Front-End Engineer`,
     description: `I'm a full-stack dev focused on mobile-first responsive design. My approach advocates Design Thinking and User Experience planning to ensure that the best possible product gets built.`,
     author: `Niko Matses`,
+    siteUrl: 'https://zen-knuth-62eed5.netlify.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
