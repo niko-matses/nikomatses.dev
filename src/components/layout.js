@@ -24,7 +24,11 @@ const Layout = ({ children, location }) => {
           title
         }
       }
-      file(relativePath: { regex: "/gatsby-astronaut/" }) {
+      file(
+        relativePath: {
+          regex: "/niko-matses_ui-designer_chalkboard-wireframing_photo-by-justine-chang.jpg/"
+        }
+      ) {
         childImageSharp {
           fluid(maxWidth: 1600) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -38,8 +42,8 @@ const Layout = ({ children, location }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Spring
-        from={{ height: location.pathname === '/' ? 100 : 200 }}
-        to={{ height: location.pathname === '/' ? 200 : 100 }}
+        from={{ height: location.pathname === '/' ? 100 : 800 }}
+        to={{ height: location.pathname === '/' ? 800 : 600 }}
       >
         {styles => (
           <div style={{ overflow: 'hidden', ...styles }}>
