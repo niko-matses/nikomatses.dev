@@ -1,11 +1,11 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Logo from '../images/gatsby-icon.png';
+import Logo from '../images/niko-matses_logo.svg';
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.div`
-  background: teal;
+  background: #39af84;
   margin-bottom: 0;
   img {
     margin-bottom: 0;
@@ -36,6 +36,24 @@ const Header = ({ siteTitle }) => (
           />
         </Link>
       </h1>
+      <Link
+        to="/about"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}
+      >
+        About
+        </Link>
+      <Link
+        to="/portfolio"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}
+      >
+        Portfolio
+        </Link>
     </HeaderContainer>
   </HeaderWrapper>
 );

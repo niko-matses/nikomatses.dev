@@ -5,8 +5,10 @@ import { Spring } from 'react-spring/renderprops';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Header from './header';
+import Footer from './footer';
 import Projects from './projects';
 import './layout.css';
+import './main.css';
 
 const MainLayout = styled.main`
   max-width: 90%;
@@ -58,11 +60,10 @@ const Layout = ({ children, location }) => {
         <div>{children}</div>
         <Projects />
       </MainLayout>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+
+      <Footer>
+
+      </Footer>
     </>
   );
 };
