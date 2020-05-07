@@ -1080,6 +1080,7 @@ body {
   border-radius: 4px;
 }
 .project__card {
+  position: relative;
   text-align: right;
   margin: 3vh auto;
   width: 90%;
@@ -1114,19 +1115,15 @@ body {
   position: relative;
   top: 0;
   min-height: 600px;
-  height: 50vh;
+  /* height: 50vh; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
 }
-.project__thumbnail {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 @media (min-height: 768px) and (max-width: 999px) {
   .project__background {
-      height: 65vh;
+      /* height: 65vh; */
     }
 }
 @media (max-width: 999px) {
@@ -1136,11 +1133,21 @@ body {
   .project__details {
       padding: 30px 15px;
   }
+  .project__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 1000px) and (max-width: 1800px) {
-  .project__background {
+
+  .project__card {
     display: flex;
+
+    min-height: 600px;
+    height: 50vw;
   }
+  
 }
 @media (min-width: 1000px) {
   .nav {
@@ -1157,6 +1164,11 @@ body {
     width: 30%;
     margin: 0 0 0 auto;
   }
+  .project__thumbnail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 }
 @media (min-width: 1200px) {
 .nav__link {
@@ -1173,11 +1185,16 @@ body {
     right: 2.5%;
     width: 30%;
   }
+  .project__card {
+    height: 50vw;
+    max-height: 1000px;
+  }
  
 }
 @media (min-width: 1800px) {
   .project__card {
     width: 75%;
+    min-height: 45vw;
   }
   .project__details {
     position: absolute;
@@ -1187,7 +1204,7 @@ body {
     padding: 30px;
   }
   .project__background {
-    min-height: 75vh;
+    /* min-height: 75vh; */
   }
   .project__description {
       font-size: 18px;
