@@ -13,47 +13,75 @@ const HeaderWrapper = styled.div`
 `;
 const HeaderContainer = styled.div`
   margin: 0 auto;
-  max-width: 960px;
   padding: 1rem;
 `;
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <HeaderContainer>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          <img
-            className="header__logo"
-            style={{ width: '100px' }}
-            src={Logo}
-            alt="Niko Matses"
-          />
+
+      <nav class="nav">
+        <ul class="nav__content ml11">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters">Niko Matses</span>
+            <Link
+              to="/"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              <img
+                className="header__logo"
+                style={{ width: '100px' }}
+                src={Logo}
+                alt="Niko Matses"
+              />
+            </Link>
+          </span>
+        </ul>
+        <nav class="scrollto-nav nav__menu">
+          <ul class="nav__menu-items  ml11">
+            <li class="nav__item text-wrapper">
+
+              <Link
+                to="/work"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`,
+                }}
+              >
+                Work
         </Link>
-      </h1>
-      <Link
-        to="/about"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        About
+            </li>
+            <li class="nav__item text-wrapper">
+              <Link
+                to="/about"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`,
+                }}
+              >
+                About
         </Link>
-      <Link
-        to="/portfolio"
-        style={{
-          color: `white`,
-          textDecoration: `none`,
-        }}
-      >
-        Portfolio
+            </li>
+            <li class="nav__item text-wrapper">
+              <Link
+                to="#section6"
+                style={{
+                  color: `white`,
+                  textDecoration: `none`,
+                }}
+              >
+                Contact
         </Link>
+            </li>
+
+          </ul>
+        </nav>
+      </nav>
+
     </HeaderContainer>
   </HeaderWrapper>
 );

@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Header from './header';
 import Footer from './footer';
-import Projects from './projects';
+// import Projects from './projects';
 import './layout.css';
 import './main.css';
 
@@ -14,7 +14,7 @@ const MainLayout = styled.main`
   max-width: 90%;
   margin: 1rem auto;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  // grid-template-columns: 3fr 1fr;
   grid-gap: 30px;
 `;
 
@@ -57,8 +57,8 @@ const Layout = ({ children, location }) => {
         <Img fluid={data.file.childImageSharp.fluid} />
       )} */}
       <MainLayout>
-        <div>{children}</div>
-        <Projects />
+        <div className="main__content">{children}</div>
+        {/* <Projects /> */}
       </MainLayout>
 
       <Footer>

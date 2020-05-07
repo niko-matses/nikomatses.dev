@@ -120,13 +120,13 @@ table {
   background-color: #f9f9f9;
 }
 /* line 6, ../sass/modules/_main.scss */
-.main-content .main-content__margins {
+.main-content__margins {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2em 1em 0;
 }
 /* line 11, ../sass/modules/_main.scss */
-.main-content .main-content__headline {
+.main-content__headline {
   font-family: "rinse", "Coda","Arial",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -137,7 +137,7 @@ table {
   color: #39af84;
 }
 /* line 20, ../sass/modules/_main.scss */
-.main-content .main-content__lead-paragraph, .main-content .main-content__subhead, .main-content .main-content__paragraph {
+.main-content__lead-paragraph, .main-content__subhead, .main-content__paragraph {
   font-family: "quiroh", "Coda", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1104,6 +1104,7 @@ body {
     width: 90%;
     margin: 30px auto;
     background: rgba(255,255,255,.9);
+    z-index: 2;
  }
 
 .hero {
@@ -1118,7 +1119,11 @@ body {
   background-repeat: no-repeat;
   background-position: bottom left;
 }
-
+.project__thumbnail {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 @media (min-height: 768px) and (max-width: 999px) {
   .project__background {
       height: 65vh;

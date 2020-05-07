@@ -36,7 +36,7 @@ const Projects = () => (
     render={({ allMarkdownRemark }) => (
       <>
         <aside>
-          <h3>Recent Projects</h3>
+          <h3>Recent Work</h3>
           <ArchiveList>
             {allMarkdownRemark.edges.map(edge => (
               <li key={edge.node.frontmatter.slug}>

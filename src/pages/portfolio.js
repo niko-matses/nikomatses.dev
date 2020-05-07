@@ -12,13 +12,14 @@ import ThumbMerrimack from '../images/projects/featured_wearemv.jpg';
 
 const Portfolio = ({ location }) => (
   <Layout location={location}>
-    <SEO title="Portfolio" />
+    <SEO title="Work" />
     <section class="section section__projects" id="section3">
-      <h2 class="main-content__headline">Recent Projects</h2>
-
-      <p class="main-content__lead-paragraph">Here are some web apps I helped to plan, design, build, and launch.</p>
 
       <ul class="main-content__unordered-list" style={{ margin: "auto", textAlign: "center" }}>
+
+        <h2 class="main-content__headline">Recent Work</h2>
+        <p class="main-content__lead-paragraph">Here are some web apps I helped to plan, design, build, and launch.</p>
+
         <li class="project__card" style={{ background: "#a3c869" }}>
           <div class="project__background" id="project__acorn"
             style={{ backgroundImage: "url(/images/projects/featured_acorn.jpg)" }} >
@@ -37,7 +38,7 @@ const Portfolio = ({ location }) => (
             </ul>
             <img
               className="project__thumbnail"
-              style={{ width: "100%", maxWidth: "1600px" }}
+              style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
               src={ThumbAcorn}
               alt="Acorn Health mobile design"
             />
@@ -61,7 +62,7 @@ const Portfolio = ({ location }) => (
             </ul>
             <img
               className="project__thumbnail"
-              style={{ width: "100%", maxWidth: "1600px" }}
+              style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
               src={ThumbIdealcap}
               alt="Ideal Capital Group mobile design"
             />
@@ -85,7 +86,7 @@ const Portfolio = ({ location }) => (
             </ul>
             <img
               className="project__thumbnail"
-              style={{ width: "100%", maxWidth: "1600px" }}
+              style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
               src={ThumbFlinggolf}
               alt="FlingGolf mobile design"
             />
@@ -109,7 +110,7 @@ const Portfolio = ({ location }) => (
             </ul>
             <img
               className="project__thumbnail"
-              style={{ width: "100%", maxWidth: "1600px" }}
+              style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
               src={ThumbLongwharf}
               alt="Long Wharf Captial mobile design"
             />
@@ -132,7 +133,7 @@ const Portfolio = ({ location }) => (
             </ul>
             <img
               className="project__thumbnail"
-              style={{ width: "100%", maxWidth: "1600px" }}
+              style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
               src={ThumbPrimary360}
               alt="Primary360 mobile design"
             />
@@ -156,7 +157,7 @@ const Portfolio = ({ location }) => (
             </ul>
             <img
               className="project__thumbnail"
-              style={{ width: "100%", maxWidth: "1600px" }}
+              style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
               src={ThumbWoodmont}
               alt="Woodmont Properties mobile design"
             />
@@ -181,7 +182,7 @@ const Portfolio = ({ location }) => (
             </ul>
             <img
               className="project__thumbnail"
-              style={{ width: "100%", maxWidth: "1600px" }}
+              style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
               src={ThumbMerrimack}
               alt="We Are Merrimack Valley mobile design"
             />
