@@ -23,8 +23,8 @@ const Header = ({ siteTitle }) => (
       <nav class="nav">
         <ul class="nav__content ml11">
           <span class="text-wrapper">
-            <span class="line line1"></span>
-            <span class="letters">Niko Matses</span>
+            {/* <span class="line line1"></span>
+            <span class="letters">Niko Matses</span> */}
             <Link
               to="/"
               style={{
@@ -50,6 +50,7 @@ const Header = ({ siteTitle }) => (
                 style={{
                   color: `white`,
                   textDecoration: `none`,
+                  marginRight: `30px`
                 }}
               >
                 Work
@@ -61,6 +62,7 @@ const Header = ({ siteTitle }) => (
                 style={{
                   color: `white`,
                   textDecoration: `none`,
+                  marginRight: `30px`
                 }}
               >
                 About

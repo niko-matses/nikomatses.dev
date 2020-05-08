@@ -13,10 +13,12 @@ import ThumbMerrimack from '../images/projects/featured_wearemv.jpg';
 const Work = ({ location }) => (
     <Layout location={location}>
         <SEO title="Work" />
-        <section class="section section__projects" id="section3">
-
+        <div class="main-content__margins">
             <h2 class="main-content__headline">Recent Work</h2>
             <p class="main-content__lead-paragraph">Here are some web apps I helped to plan, design, build, and launch.</p>
+        </div>
+        <section class="section section__projects" id="section3">
+
 
             <ul class="main-content__unordered-list" style={{ margin: "auto", textAlign: "center" }}>
 

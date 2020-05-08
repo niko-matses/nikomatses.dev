@@ -44,12 +44,12 @@ const Layout = ({ children, location }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Spring
-        from={{ height: location.pathname === '/' ? 100 : 800 }}
-        to={{ height: location.pathname === '/' ? 800 : 600 }}
+        from={{ height: location.pathname === '/' ? 0 : 300, opacity: location.pathname === '/' ? 0 : 1 }}
+        to={{ height: location.pathname === '/' ? 300 : 0, opacity: location.pathname === '/' ? 1 : 0 }}
       >
         {styles => (
-          <div style={{ overflow: 'hidden', ...styles }}>
-            <Img fluid={data.file.childImageSharp.fluid} />
+          <div style={{ position: 'absolute', height: '100vh', overflow: 'hidden', ...styles }}>
+
           </div>
         )}
       </Spring>
