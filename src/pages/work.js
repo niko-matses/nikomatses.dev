@@ -22,7 +22,7 @@ const Work = ({ location }) => (
 
             <ul class="main-content__unordered-list" style={{ margin: "auto", textAlign: "center" }}>
 
-                <li class="project__card project__background" style={{ background: "#a3c869" }}>
+                <li class="project__card" style={{ background: "#a3c869" }}>
                     <ul class="project__details">
                         <li class="project__title">Acorn Health</li>
                         <li class="project__description">Connecting families with an ABA network to find care for children with
@@ -37,13 +37,12 @@ const Work = ({ location }) => (
                     </ul>
                     <img
                         className="project__thumbnail"
-                        style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
                         src={ThumbAcorn}
                         alt="Acorn Health mobile design"
                     />
                 </li>
 
-                <li class="project__card project__background" style={{ background: "#197ab1" }}>
+                <li class="project__card" style={{ background: "#197ab1" }}>
                     <ul class="project__details">
                         <li class="project__title">Ideal Cap Group</li>
                         <li class="project__description">A fresh look for a family-owned firm with decades of investment experience.
@@ -58,12 +57,11 @@ const Work = ({ location }) => (
                     </ul>
                     <img
                         className="project__thumbnail"
-                        style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
                         src={ThumbIdealcap}
                         alt="Ideal Capital Group mobile design"
                     />
                 </li >
-                <li class="project__card project__background" style={{ background: "#ffca00" }}>
+                <li class="project__card" style={{ background: "#ffca00" }}>
                     <ul class="project__details">
                         <li class="project__title">FlingGolf</li>
                         <li class="project__description">Getting today's generation to try this sport's new spin on traditional
@@ -79,12 +77,11 @@ const Work = ({ location }) => (
                     </ul>
                     <img
                         className="project__thumbnail"
-                        style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
                         src={ThumbFlinggolf}
                         alt="FlingGolf mobile design"
                     />
                 </li >
-                <li class="project__card project__background" style={{ background: "#bbd4f6" }}>
+                <li class="project__card" style={{ background: "#bbd4f6" }}>
                     <ul class="project__details">
                         <li class="project__title">Long Wharf Capital</li>
                         <li class="project__description">Building trust between real estate investors and this Boston-based team.
@@ -100,12 +97,11 @@ const Work = ({ location }) => (
                     </ul>
                     <img
                         className="project__thumbnail"
-                        style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
                         src={ThumbLongwharf}
                         alt="Long Wharf Captial mobile design"
                     />
                 </li >
-                <li class="project__card project__background" style={{ background: "#08b5af" }}>
+                <li class="project__card" style={{ background: "#08b5af" }}>
                     <ul class="project__details">
                         <li class="project__title">Primary360</li>
                         <li class="project__description">Transforming how an integrated marketing agency presents itself online.
@@ -120,12 +116,11 @@ const Work = ({ location }) => (
                     </ul>
                     <img
                         className="project__thumbnail"
-                        style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
                         src={ThumbPrimary360}
                         alt="Primary360 mobile design"
                     />
                 </li >
-                <li class="project__card project__background" style={{ background: "#073a55" }}>
+                <li class="project__card" style={{ background: "#073a55" }}>
                     <ul class="project__details">
                         <li class="project__title">Woodmont Properties</li>
                         <li class="project__description">Promoting partnership for a real estate company now in business over half a
@@ -141,12 +136,11 @@ const Work = ({ location }) => (
                     </ul>
                     <img
                         className="project__thumbnail"
-                        style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
                         src={ThumbWoodmont}
                         alt="Woodmont Properties mobile design"
                     />
                 </li >
-                <li class="project__card project__background" style={{ background: "#d3ebf1" }}>
+                <li class="project__card" style={{ background: "#d3ebf1" }}>
                     <ul class="project__details">
                         <li class="project__title">We Are Merrimack Valley</li>
                         <li class="project__description">Bringing economic development to the region with real estate listings,
@@ -163,7 +157,6 @@ const Work = ({ location }) => (
                     </ul>
                     <img
                         className="project__thumbnail"
-                        style={{ width: "100%", maxWidth: "1600px", maxHeight: "1000px" }}
                         src={ThumbMerrimack}
                         alt="We Are Merrimack Valley mobile design"
                     />
